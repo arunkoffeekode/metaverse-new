@@ -49,7 +49,7 @@ function SocialEslider() {
             <section className='social-E-slider d-block'>
 
                 <div className='row justify-content-center'>
-                    <div className='col-lg-9 col-md-8 col-xl-9 col-xxl-7 col-sm-12'>
+                    <div className='col-lg-9 col-md-12 col-xl-9 col-xxl-7 col-sm-12'>
                         <div className='slider-title'>
                             <h1 class="cursor-scale">Explore The Latest In Social-e</h1>
                             <p class="cursor-scale small">Lorem ipsum dolor sit amet consectetur. Sed mauris dui habitasse libero leo in. Varius id cursus sapien nulla scelerisque sit mi hac. Venenatis nullam sit venenatis mattis eget. Egestas vel sed fusce viverra.</p>

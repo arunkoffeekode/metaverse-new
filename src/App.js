@@ -2,6 +2,8 @@ import Footer from "./Component/Footer";
 import Appsection from "./Component/Appsection";
 import Massiveslider from "./Component/Massiveslider";
 import SocialEslider from "./Component/SocialEslider";
+import Xrelight from "./Component/Xrelight";
+import Itshare from "./Component/Itshare";
 
 import gsap from "gsap";
 import { useEffect } from "react";
@@ -54,6 +56,9 @@ function App() {
       <div class="cursor"></div>
 
       {/* <main class="c-main"> */}
+
+      <Xrelight></Xrelight>
+      <Itshare></Itshare>
       <SocialEslider></SocialEslider>
       <Massiveslider></Massiveslider>
       <Appsection></Appsection>

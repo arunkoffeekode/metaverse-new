@@ -49,7 +49,7 @@ function Massiveslider() {
             <section className='social-slider d-block'>
                 <div className='container-fluid'>
                     <div className='row justify-content-center'>
-                        <div className='col-lg-9 col-md-8 col-xl-9 col-xxl-7 col-sm-12'>
+                        <div className='col-lg-9 col-md-12 col-xl-9 col-xxl-7 col-sm-12'>
                             <div className='slider-title'>
                                 <h1 class="cursor-scale">Enter into a massive
                                     social experience.</h1>

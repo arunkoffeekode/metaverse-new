@@ -18,7 +18,9 @@
     .app-center {justify-content: center;}
     .app-title h1{font-size: 22px!important;font-weight: 500!important;line-height: 32px!important}
     .app .app-box .app-detils h2{font-size: 22px;font-weight: 500;line-height: 32px;}
-    
+    .slider-title h1{font-size: 22px;line-height: 32px;}
+    .xr .xr-right .skew .scaled{max-width: 100%;max-height: none;transform:none;padding: 12px; border-radius: 15px;}
+    .xr .xr-right .skew .scaled img{max-width: 100%;max-height: none;transform:none;border-radius: 15px}
 }
 
 /* ipad-pro-media-query */

@@ -143,10 +143,23 @@
 .slider-title p::before {content: "\f10d"; font-family: FontAwesome; display: inline-block; margin-right: 15px;color: #FC1785; font-size: 25px;}
 .slider-title p::after {content: "\f10e "; font-family: FontAwesome; display: inline-block; margin-left: 15px;color: #FC1785; font-size: 25px;}
 
-/* 4] Social-e Slider */
+/* 4] Social-e Slider Section */
 .social-E-slider{width: 100%;position: relative;float: left;padding: 15px 0px 15px 0px;}
 .social-E-slider .social-box12 .overlay {position: absolute;top: 0;bottom: 0;left: 0;border-radius: 10px;right: 0;height: 100%;width: 100%;opacity: 0;transition: .5s ease;background: linear-gradient(0deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), radial-gradient(127.67% 174.96% at 108.77% 102.37%, rgba(66, 71, 73, 0.5) 0%, rgba(103, 108, 111, 0.21) 77.08%, rgba(66, 71, 73, 0) 100%)}
 .social-E-slider .social-box12 .text {color: white;font-size: 20px;text-transform: uppercase;font-weight: 500;line-height: 30px;position: absolute;top: 50%;left: 50%; -webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);text-align: center;}
 .social-E-slider .social-box12:hover .overlay {opacity: 1;}
 .social-E-slider .social-box12 .image {display: block;width: 100%;height: auto;border-radius: 10px;}
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{background: #FC1785!important;}
+
+/* 5] XR-Elight Section */
+.xr{width: 100%;position: relative;float: left;padding: 30px 0px 30px 0px;margin-top: 20px;}
+.xr .xr-left{width: 100%;position: relative;float: left;}
+.xr .xr-left h1{font-family: 'Rowdies';font-size: 33px;font-weight: 600;text-align: left;text-transform: uppercase;color: #ffffff;line-height: 43px;margin-bottom: 15px;}
+.xr .xr-left h1 span{color: #FC1785;}
+.xr .xr-left p{font-size: 16px;font-weight: normal;line-height: 26px;color: #ffffff;line-height: 27px;margin-bottom: 25px;}
+.xr .xr-left .xr-btn{background: #0F234E;border: 1px solid #122B61;box-shadow: inset 10px 10px 20px #010D27;border-radius: 5px;font-size: 17px;font-weight: 500;text-align: center;padding: 10px 25px;outline: none;color: #ffffff;text-transform: uppercase;margin-bottom: 20px;}
+.xr .xr-left .xr-btn:hover{background: #FC1785;box-shadow: 10px 20px 20px #080F1F;transition: 0.3s linear;border: 1px solid #FC1785;}
+.xr .xr-right{width: 100%;position: relative;float: left;}
+.xr .xr-right .skew { width: 100%; position: relative;float: left;}
+.xr .xr-right .skew .scaled {background: #0F234E;border: 1px solid #122B61;box-shadow: inset 10px 10px 20px #010D27;transform: perspective(3300px) scaleZ(7) rotateY(-19deg);border-radius: 30px;padding: 20px;float: left;position: relative;max-height: 300px;max-width: 619px;}
+.xr .xr-right .skew .scaled img {border-radius: 30px;transform: perspective(3300px) scaleZ(1) rotateY(-9deg);max-height: 262px;max-width: 600px;}
