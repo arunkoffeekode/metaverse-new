@@ -7,7 +7,88 @@
 
 
 }
+@media only screen and (max-width: 991.98px) {
+	
+	.header .header-left {
+		position: absolute;
+		width: 100%;
+	}
+	.mobile_btn {
+		color: #1faeee !important;
+		cursor: pointer;
+		display: block;
+		font-size: 24px;
+		height: 60px;
+		left: 0;
+		line-height: 60px;
+		padding: 0 15px;
+		position: absolute;
+		text-align: center;
+		top: 0;
+		z-index: 10;
+	}
+	#toggle_btn {
+		display: none;
+	}
+	.top-nav-search {
+		display: none;
+	}
+	.login-wrapper .loginbox .login-left {
+		padding: 80px 50px;
+		width: 50%;
+	}
+	.login-wrapper .loginbox .login-right {
+		padding: 50px;
+		width: 50%;
+	}
+	.sidebar {
+		margin-left: -225px;
+		width: 225px;
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+		z-index: 1041;
+	}
+	.page-wrapper {
+		margin-left: 0;
+		padding-left: 0;
+		padding-right: 0;
+		-webkit-transition: all 0.4s ease;
+		-moz-transition: all 0.4s ease;
+		transition: all 0.4s ease;
+	}
+}
 
+@media only screen and (max-width: 767.98px) {
+	
+	.header .has-arrow .dropdown-toggle:after {
+		display: none;
+	}
+	.user-menu.nav > li > a > span:not(.user-img) {
+		display: none;
+	}
+	.navbar-nav .open .dropdown-menu {
+		float: left;
+		position: absolute;
+	}
+	.navbar-nav.user-menu .open .dropdown-menu {
+		left: auto;
+		right: 0;
+	}
+	.header .header-left {
+		padding: 0 15px;
+	}
+	.header .header-left .logo {
+		display: none;
+	}
+	.header-left .logo.logo-small {
+		display: inline-block;
+	}
+	.error-box h1 {
+		font-size: 6em;
+	}
+
+}
 /* width: 991px; */
 
 @media screen and (max-width: 61.938em) {
@@ -21,6 +102,10 @@
     .slider-title h1{font-size: 22px;line-height: 32px;}
     .xr .xr-right .skew .scaled{max-width: 100%;max-height: none;transform:none;padding: 12px; border-radius: 15px;}
     .xr .xr-right .skew .scaled img{max-width: 100%;max-height: none;transform:none;border-radius: 15px}
+    .login-bg{display: none}
+    .login .top-title h2{font-size: 22px;font-weight: 500;text-align: center;}
+    .justify{justify-content: center;}
+
 }
 
 /* ipad-pro-media-query */
@@ -60,3 +145,73 @@
 @media (max-width: 320px) {
   
 }
+@media only screen and (min-width: 992px) {
+    .company-profile-first-section .right-section .checkout-login-step .company-logo-desk{display: none;}
+        #toggle_btn {
+            align-items: center;
+            color: #1faeee;
+            display: inline-flex;
+            float: left;
+            font-size: 30px;
+            height: 65px;
+            justify-content: center;
+            margin-left: 15px;
+            padding: 0 15px;
+        }
+        #toggle_btn:hover{
+            color: #1faeee;
+        }
+        .mini-sidebar .header-left .logo img {
+            height: auto;
+            max-height: 30px;
+            width: auto;
+        }
+        .mini-sidebar .header .header-left .logo {
+            display: none;
+        }
+        .mini-sidebar .header-left .logo.logo-small {
+            display: block;
+        }
+        .mini-sidebar .header .header-left {
+            padding: 0 5px;
+            /* width: 78px; */
+        }
+        .mini-sidebar .sidebar {
+            width: 78px;
+        }
+        .mini-sidebar.expand-menu .sidebar {
+            width: 240px;
+        }
+        .mini-sidebar .menu-title {
+            visibility: hidden;
+            white-space: nowrap;
+        }
+        .mini-sidebar.expand-menu .menu-title {
+            visibility: visible;
+        }
+        .mini-sidebar .menu-title a {
+            visibility: hidden;
+        }
+        .mini-sidebar.expand-menu .menu-title a {
+            visibility: visible;
+        }
+        .modal-open.mini-sidebar .sidebar {
+            z-index: 1051;
+        }
+        .mini-sidebar .sidebar .sidebar-menu ul > li > a span {
+            display: none;
+            transition: all 0.2s ease-in-out;
+            opacity: 0;
+        }
+        .mini-sidebar.expand-menu .sidebar .sidebar-menu ul > li > a span {
+            display: inline;
+            opacity: 1;
+        }
+        .mini-sidebar.expand-menu .sidebar .sidebar-menu > ul > li > a i {
+            font-size: 13px;
+            width: 20px;
+        }
+        .mini-sidebar .page-wrapper {
+            margin-left: 78px;
+        }
+    }

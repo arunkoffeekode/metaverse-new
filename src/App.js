@@ -4,11 +4,12 @@ import Massiveslider from "./Component/Massiveslider";
 import SocialEslider from "./Component/SocialEslider";
 import Xrelight from "./Component/Xrelight";
 import Itshare from "./Component/Itshare";
-
+import Sidebar from "./Dashboard/Sidebar";
+import Head from "./Dashboard/Head";
 import gsap from "gsap";
 import { useEffect } from "react";
-
-
+import Login from "./Component/Login";
+import DiscoverdWord from "./Dashboard/DiscoverdWord";
 function App() {
 
   // cursor start
@@ -52,19 +53,22 @@ function App() {
   }, [])
 
   return (
-    <>
+    <div>
       <div class="cursor"></div>
 
       {/* <main class="c-main"> */}
-
-      <Xrelight></Xrelight>
+      {/* <Login></Login> */}
+      <Head></Head>
+      <DiscoverdWord/>
+      <Sidebar></Sidebar>
+      {/* <Xrelight></Xrelight>
       <Itshare></Itshare>
       <SocialEslider></SocialEslider>
       <Massiveslider></Massiveslider>
       <Appsection></Appsection>
-      <Footer></Footer>
+      <Footer></Footer> */}
       {/* </main> */}
-    </>
+    </div>
   );
 }
 

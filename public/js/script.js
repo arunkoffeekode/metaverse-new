@@ -1,182 +1,189 @@
-$('#fullpage').fullpage({
-    autoScrolling: customScroll,
-    scrollOverflow: customScroll,
-    resize: false,
-    anchors: ['panelBlock1', 'panelBlock2', 'panelBlock3', 'panelBlock4', 'panelBlock5', 'panelBlock6', 'panelBlock7', 'panelBlock8'],
-    menu: '.nav-menu',
-    navigation: true,
-    navigationPosition: 'right',
-    slidesNavigation: true,
-    loopHorizontal: true,
-    //responsive: 900,
-    afterLoad: function(anchorLink, index){
-        if(index == 2){
-            $('.panel-2 .animate-fadeIn').animate({ opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-2 .animate-fadeInUp, .panel-2 .animate-fadeInDown').animate({ top: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-2 .animate-fadeInLeft, .panel-2 .animate-fadeInRight').animate({ left: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $(progressBar).each(function(){
-                loadDaBars();
-            });
-        }
-        if(index == 3){
-            $('.panel-3 .animate-fadeIn').animate({ opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-3 .animate-fadeInUp, .panel-3 .animate-fadeInDown').animate({ top: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-3 .animate-fadeInLeft, .panel-3 .animate-fadeInRight').animate({ left: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $(progressBar).each(function(){
-                loadDaBars();
-            });
-        }
-        if(index == 4){
-            $('.panel-4 .animate-fadeIn').animate({ opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-4 .animate-fadeInUp, .panel-4 .animate-fadeInDown').animate({ top: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-4 .animate-fadeInLeft, .panel-4 .animate-fadeInRight').animate({ left: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $(progressBar).each(function(){
-                loadDaBars();
-            });
-        }
-        if(index == 5){
-            $('.panel-5 .animate-fadeIn').animate({ opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-5 .animate-fadeInUp, .panel-5 .animate-fadeInDown').animate({ top: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-5 .animate-fadeInLeft, .panel-5 .animate-fadeInRight').animate({ left: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $(progressBar).each(function(){
-                loadDaBars();
-            });
-        }
-        if(index == 6){
-            $('.panel-6 .animate-fadeIn').animate({ opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-6 .animate-fadeInUp, .panel-6 .animate-fadeInDown').animate({ top: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-6 .animate-fadeInLeft, .panel-6 .animate-fadeInRight').animate({ left: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $(progressBar).each(function(){
-                loadDaBars();
-            });
-        }
-        if(index == 7){
-            $('.panel-7 .animate-fadeIn').animate({ opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-7 .animate-fadeInUp, .panel-7 .animate-fadeInDown').animate({ top: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-7 .animate-fadeInLeft, .panel-7 .animate-fadeInRight').animate({ left: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $(progressBar).each(function(){
-                loadDaBars();
-            });
-        }
-        if(index == 8){
-            $('.panel-8 .animate-fadeIn').animate({ opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-8 .animate-fadeInUp, .panel-8 .animate-fadeInDown').animate({ top: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-8 .animate-fadeInLeft, .panel-8 .animate-fadeInRight').animate({ left: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $(progressBar).each(function(){
-                loadDaBars();
-            });
-        }
-        if(index == 9){
-            $('.panel-9 .animate-fadeIn').animate({ opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-9 .animate-fadeInUp, .panel-9 .animate-fadeInDown').animate({ top: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-9 .animate-fadeInLeft, .panel-9 .animate-fadeInRight').animate({ left: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $(progressBar).each(function(){
-                loadDaBars();
-            });
-        }
-        if(index == 10){
-            $('.panel-10 .animate-fadeIn').animate({ opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-10 .animate-fadeInUp, .panel-10 .animate-fadeInDown').animate({ top: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $('.panel-10 .animate-fadeInLeft, .panel-10 .animate-fadeInRight').animate({ left: '0', opacity: 1 }, 1500, 'easeOutExpo');
-            $(progressBar).each(function(){
-                loadDaBars();
-            });
-        }
-    }
-});
+
+(function ($) {
+  "use strict";
 
 
-// set the starting position of the cursor outside of the screen
-let clientX = 100;
-let clientY = 100;
-const innerCursor = document.querySelector(".cursor--small");
 
-const initCursor = () => {
-  // add listener to track the current mouse position
-  document.addEventListener("mousemove", e => {
-    clientX = e.clientX;
-    clientY = e.clientY;
+  // jQuery functions to show and hide divisions
+  $(document).ready(function () {
+    $('input[type="checkbox"]').click(function () {
+      var inputValue = $(this).attr("value");
+      $("." + inputValue).toggle();
+    });
   });
-  
-  // transform the innerCursor to the current mouse position
-  // use requestAnimationFrame() for smooth performance
-  const render = () => {
-    innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
-    // if you are already using TweenMax in your project, you might as well
-    // use TweenMax.set() instead
-    // TweenMax.set(innerCursor, {
-    //   x: clientX,
-    //   y: clientY
-    // });
-    
-    requestAnimationFrame(render);
-  };
-  requestAnimationFrame(render);
-};
 
-initCursor();
+  // ===========================================================================
+  // Variables declarations
+  var $wrapper = $('.main-wrapper');
+  var $pageWrapper = $('.page-wrapper');
+  var $slimScrolls = $('.slimscroll');
 
-let lastX = 0;
-let lastY = 0;
-let isStuck = false;
-let showCursor = false;
-let group, stuckX, stuckY, fillOuterCursor;
+  // Sidebar
 
-const initCanvas = () => {
-  const canvas = document.querySelector(".cursor--canvas");
-  const shapeBounds = {
-    width: 75,
-    height: 75
+  var Sidemenu = function () {
+    this.$menuItem = $('#sidebar-menu a');
   };
-  paper.setup(canvas);
-  const strokeColor = "rgba(0, 0, 0, 0.5)";
-  const strokeWidth = 1;
-  const segments = 8;
-  const radius = 20;
-  
-  // we'll need these later for the noisy circle
-  const noiseScale = 150; // speed
-  const noiseRange = 4; // range of distortion
-  let isNoisy = false; // state
-  
-  // the base shape for the noisy circle
-  const polygon = new paper.Path.RegularPolygon(
-    new paper.Point(0, 0),
-    segments,
-    radius
-  );
-  polygon.strokeColor = strokeColor;
-  polygon.strokeWidth = strokeWidth;
-  polygon.smooth();
-  group = new paper.Group([polygon]);
-  group.applyMatrix = false;
-  
-  const noiseObjects = polygon.segments.map(() => new SimplexNoise());
-  let bigCoordinates = [];
-  
-  // function for linear interpolation of values
-  const lerp = (a, b, n) => {
-    return (1 - n) * a + n * b;
-  };
-  
-  // function to map a value from one range to another range
-  const map = (value, in_min, in_max, out_min, out_max) => {
-    return (
-      ((value - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min
-    );
-  };
-  
-  // the draw loop of Paper.js 
-  // (60fps with requestAnimationFrame under the hood)
-  paper.view.onFrame = event => {
-    // using linear interpolation, the circle will move 0.2 (20%)
-    // of the distance between its current position and the mouse
-    // coordinates per Frame
-    lastX = lerp(lastX, clientX, 0.2);
-    lastY = lerp(lastY, clientY, 0.2);
-    group.position = new paper.Point(lastX, lastY);
+
+  $(document).ready(function () {
+    var $this = Sidemenu;
+    $('#sidebar-menu a').on('click', function (e) {
+      if ($(this).parent().hasClass('submenu')) {
+        e.preventDefault();
+      }
+      if (!$(this).hasClass('subdrop')) {
+        $('ul', $(this).parents('ul:first')).slideUp(350);
+        $('a', $(this).parents('ul:first')).removeClass('subdrop');
+        $(this).next('ul').slideDown(350);
+        $(this).addClass('subdrop');
+      } else if ($(this).hasClass('subdrop')) {
+        $(this).removeClass('subdrop');
+        $(this).next('ul').slideUp(350);
+      }
+    });
+    $('#sidebar-menu ul li.submenu a.active').parents('li:last').children('a:first').addClass('active').trigger('click');
+  });
+  function init() {
+
   }
-}
 
-initCanvas();
+  // Sidebar Initiate
+  init();
 
+  // Mobile menu sidebar overlay
+
+  $('body').append('<div class="sidebar-overlay"></div>');
+  $(document).on('click', '#mobile_btn', function () {
+    $wrapper.toggleClass('slide-nav');
+    $('.sidebar-overlay').toggleClass('opened');
+    $('html').addClass('menu-opened');
+    return false;
+  });
+
+  // Sidebar overlay
+
+  $(".sidebar-overlay").on("click", function () {
+    $wrapper.removeClass('slide-nav');
+    $(".sidebar-overlay").removeClass("opened");
+    $('html').removeClass('menu-opened');
+  });
+
+  // Page Content Height
+
+  if ($('.page-wrapper').length > 0) {
+    var height = $(window).height();
+    $(".page-wrapper").css("min-height", height);
+  }
+
+  // Page Content Height Resize
+
+  $(window).resize(function () {
+    if ($('.page-wrapper').length > 0) {
+      var height = $(window).height();
+      $(".page-wrapper").css("min-height", height);
+    }
+  });
+
+
+
+
+
+
+
+
+
+
+  // Mail important
+
+  $(document).on('click', '.mail-important', function () {
+    $(this).find('i.fa').toggleClass('fa-star').toggleClass('fa-star-o');
+  });
+
+  // Summernote
+
+  if ($('.summernote').length > 0) {
+    $('.summernote').summernote({
+      height: 200,                 // set editor height
+      minHeight: null,             // set minimum height of editor
+      maxHeight: null,             // set maximum height of editor
+      focus: false                 // set focus to editable area after initializing summernote
+    });
+  }
+
+  // Product thumb images
+
+  if ($('.proimage-thumb li a').length > 0) {
+    var full_image = $(this).attr("href");
+    $(".proimage-thumb li a").click(function () {
+      full_image = $(this).attr("href");
+      $(".pro-image img").attr("src", full_image);
+      $(".pro-image img").parent().attr("href", full_image);
+      return false;
+    });
+  }
+
+  // Lightgallery
+
+  if ($('#pro_popup').length > 0) {
+    $('#pro_popup').lightGallery({
+      thumbnail: true,
+      selector: 'a'
+    });
+  }
+
+  // Sidebar Slimscroll
+
+  if ($slimScrolls.length > 0) {
+    $slimScrolls.slimScroll({
+      height: 'auto',
+      width: '100%',
+      position: 'right',
+      size: '7px',
+      color: '#ccc',
+      allowPageScroll: false,
+      wheelStep: 10,
+      touchScrollStep: 100
+    });
+    var wHeight = $(window).height() - 60;
+    $slimScrolls.height(wHeight);
+    $('.sidebar .slimScrollDiv').height(wHeight);
+    $(window).resize(function () {
+      var rHeight = $(window).height() - 60;
+      $slimScrolls.height(rHeight);
+      $('.sidebar .slimScrollDiv').height(rHeight);
+    });
+  }
+
+  // Small Sidebar
+
+  $(document).on('click', '#toggle_btn', function () {
+    if ($('body').hasClass('mini-sidebar')) {
+      $('body').removeClass('mini-sidebar');
+      $('.subdrop + ul').slideDown();
+    } else {
+      $('body').addClass('mini-sidebar');
+      $('.subdrop + ul').slideUp();
+    }
+    setTimeout(function () {
+      mA.redraw();
+      mL.redraw();
+    }, 300);
+    return false;
+  });
+  $(document).on('mouseover', function (e) {
+    e.stopPropagation();
+    if ($('body').hasClass('mini-sidebar') && $('#toggle_btn').is(':visible')) {
+      var targ = $(e.target).closest('.sidebar').length;
+      if (targ) {
+        $('body').addClass('expand-menu');
+        $('.subdrop + ul').slideDown();
+      } else {
+        $('body').removeClass('expand-menu');
+        $('.subdrop + ul').slideUp();
+      }
+      return false;
+    }
+  });
+
+
+})
+  (jQuery);
