@@ -10,6 +10,7 @@ import gsap from "gsap";
 import { useEffect } from "react";
 import Login from "./Component/Login";
 import DiscoverdWord from "./Dashboard/DiscoverdWord";
+import Match from "./Dashboard/Match";
 function App() {
 
   // cursor start
@@ -59,7 +60,8 @@ function App() {
       {/* <main class="c-main"> */}
       {/* <Login></Login> */}
       <Head></Head>
-      <DiscoverdWord/>
+      <Match></Match>
+      {/* <DiscoverdWord/> */}
       <Sidebar></Sidebar>
       {/* <Xrelight></Xrelight>
       <Itshare></Itshare>
