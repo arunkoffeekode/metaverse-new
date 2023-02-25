@@ -58,7 +58,7 @@ function SocialEslider() {
                 </div>
 
                 <div className='row'>
-                    <div className='col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-sm-12 mb-4'>
+                    <div className='col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-sm-12'>
                         <OwlCarousel className='owl-carousel owl-theme' loop items={1} nav autoplay={true} {...options1}>
 
                             <div class="item">

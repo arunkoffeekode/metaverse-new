@@ -92,7 +92,12 @@
 /* width: 991px; */
 
 @media screen and (max-width: 61.938em) {
-    
+   
+    .avtar .avtar-title h1{font-size: 23px;font-weight: normal;line-height: 33px;}
+    .avtar .avtar-left h2{font-size: 20px;font-weight: normal;text-align: left;line-height: 30px;}
+    .watch-now{margin-top: 10px;}
+    .watch-now .watch-title{font-size: 27px;line-height: 37px;}
+    .xr .xr-left h1{font-size: 25px;font-weight: 500;line-height: 35px;}
     .c-section1 {height: auto!important;scroll-snap-align: inherit!important;}
     .footer .footer-title .title{font-size: 22px!important;font-weight: 500!important;line-height: 32px!important}
     .app .app-box { max-height: none;padding: 0px;}
@@ -109,7 +114,12 @@
     .Match .courasel-section .courasel-footer{padding: 9px;}
     .Match .courasel-section .courasel-footer .footer-btn .colse-btn{margin: 0px 5px;}
     .Match .courasel-section .courasel-footer .footer-btn .colse-btn-1{padding: 5px 14px;}
-
+    .watch-now .watch-title:before{display: none;}
+    .watch-now .watch-title:after{display: none;}
+    .avtar .avtar-title:before{display: none;}
+    .avtar .avtar-title:after{display: none;}
+    .slider-title:after{display: none;}
+    .slider-title:before{display: none;}
 }
 
 /* ipad-pro-media-query */

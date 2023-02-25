@@ -11,6 +11,11 @@ import { useEffect } from "react";
 import Login from "./Component/Login";
 import DiscoverdWord from "./Dashboard/DiscoverdWord";
 import Match from "./Dashboard/Match";
+import About from "./Dashboard/About";
+import Watch from "./Component/Watch";
+import Header from "./Component/Header/Header";
+import Avtar from "./Component/Avtar";
+import Slider from "./Component/Slider";
 function App() {
 
   // cursor start
@@ -59,16 +64,22 @@ function App() {
 
       {/* <main class="c-main"> */}
       {/* <Login></Login> */}
-      <Head></Head>
+      {/* <Head></Head>
+      <About></About>
       <Match></Match>
-      {/* <DiscoverdWord/> */}
-      <Sidebar></Sidebar>
-      {/* <Xrelight></Xrelight>
+      <DiscoverdWord/>
+      <Sidebar></Sidebar> */}
+      {/* <Header></Header>  */}
+      {/* <Slider></Slider> */}
+      <Header></Header>
+      <Watch></Watch>
+      <Avtar></Avtar>
+      <Massiveslider></Massiveslider>
+      <Xrelight></Xrelight>
       <Itshare></Itshare>
       <SocialEslider></SocialEslider>
-      <Massiveslider></Massiveslider>
       <Appsection></Appsection>
-      <Footer></Footer> */}
+      <Footer></Footer>
       {/* </main> */}
     </div>
   );
