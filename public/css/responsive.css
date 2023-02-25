@@ -120,6 +120,7 @@
     .avtar .avtar-title:after{display: none;}
     .slider-title:after{display: none;}
     .slider-title:before{display: none;}
+    .vr-details .vr-details-box{width: 100%;position: relative;left: 0;bottom: 0;}
 }
 
 /* ipad-pro-media-query */

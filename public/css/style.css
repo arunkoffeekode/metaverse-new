@@ -712,3 +712,35 @@ width: auto;
 .animated-slider .slider-details h1{font-family: 'Rowdies';font-size: 35px;font-weight: 500;text-align: left;text-transform: uppercase;color: #ffffff;line-height: 45px;margin-bottom: 20px;}
 .animated-slider .slider-details p{font-family: 'Poppins', sans-serif;font-size: 16px;font-weight: normal;text-align: left;line-height: 26px;color: #ffffff;}
 .animated-slider .courael-img{width: 100%;position: relative;float: left;margin-bottom: 20px;}
+
+/* VR-Section */
+.mountain{width: 100%;position: relative;float: left;height: 100vh;background: url(/images/home-bg.png)center center #131D32;;background-size: cover;overflow: hidden;}
+.mountain:before {position: absolute;content: '';width: 100%;height: 100%;top: 0;left: 0;background-color: #0F234E;opacity: .30;}
+
+.vr-img{height: 100vh;width: 100%;position: absolute;bottom: 0px;left: 0;right: 0;background: url(/images/vr-img.png)center top;background-size: cover;z-index: 1!important;}
+.vr-img{width: 100%; animation: zoominoutsinglefeatured 5s infinite;}
+
+/* 
+@keyframes zoominoutsinglefeatured {
+  0% {
+      transform: scale(1,1);
+  }
+
+  50% {
+      transform: scale(1.1,1.1);
+  }
+
+  100% {
+      transform: scale(1,1);
+  }
+} */
+.vr-details{width: 100%;}
+.vr-details .vr-details-box{position: absolute;bottom:90px;left: 30px;width: 30%;}
+.vr-details .vr-details-box h5{font-family: 'Rowdies';font-size: 19px;font-weight: normal;text-align: left;text-transform: uppercase;line-height: 29px;color: #ffffff;margin-bottom: 10px;}
+.dt{align-items: center;height: 100vh;}
+.vr-details .vr-details-box h5 span{color: #FC1785;}
+.vr-details .vr-details-box p{font-size: 14px;font-weight: normal;text-align: left;line-height: 24px;color: #ffffff;font-family: 'Poppins', sans-serif;margin-bottom: 10px;}
+.vr-details .vr-details-box .vr-btn{background: #0F234E;font-size: 16px;font-weight: 500;text-align: center;padding: 10px 40px;color: #ffffff;border: 1px solid #122B61;box-shadow: inset 10px 10px 20px #010D27;border-radius: 5px;}
+.vr-details .vr-details-box .vr-btn:hover{background: #FC1785;box-shadow: 10px 20px 20px #080F1F;transition: 0.3s linear;border: 1px solid #FC1785;}
+.vr-details .top-nav-section{width: 100%;position: relative;float: left;padding: 15px;}
+.vr-details .top-nav-section .nav-img{width: 100%;}

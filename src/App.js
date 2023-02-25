@@ -15,7 +15,8 @@ import About from "./Dashboard/About";
 import Watch from "./Component/Watch";
 import Header from "./Component/Header/Header";
 import Avtar from "./Component/Avtar";
-import Slider from "./Component/Slider";
+import Vr from "./Component/Vr";
+
 function App() {
 
   // cursor start
@@ -64,22 +65,26 @@ function App() {
 
       {/* <main class="c-main"> */}
       {/* <Login></Login> */}
+
       {/* <Head></Head>
       <About></About>
       <Match></Match>
       <DiscoverdWord/>
       <Sidebar></Sidebar> */}
-      {/* <Header></Header>  */}
-      {/* <Slider></Slider> */}
-      <Header></Header>
-      <Watch></Watch>
+
+    
+
+      {/* <Header></Header> */}
+      <Vr></Vr>
+      {/* <Watch></Watch>
       <Avtar></Avtar>
       <Massiveslider></Massiveslider>
       <Xrelight></Xrelight>
       <Itshare></Itshare>
       <SocialEslider></SocialEslider>
       <Appsection></Appsection>
-      <Footer></Footer>
+      <Footer></Footer> */}
+
       {/* </main> */}
     </div>
   );
