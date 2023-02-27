@@ -1,14 +1,16 @@
 import React from 'react'
-
+import Header from './Header/Header'
 function Login() {
     return (
         <div>
+
             <section className='login'>
+                <Header className="he"></Header>
                 <div className='login-bg'></div>
                 <div className='container'>
                     <div className='row justify' style={{ alignItems: 'center' }}>
                         <div className='col-lg-5 col-md-7 col-sm-12 col-xl-5'>
-                            <div className='top-title'>
+                            <div className='top-title top-mt'>
                                 <h2>Enter your new Dating world</h2>
                             </div>
                             <div className='login-box'>

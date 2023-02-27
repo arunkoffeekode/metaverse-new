@@ -3,7 +3,7 @@ import React from 'react'
 function Watch() {
     return (
         <div>
-             {/* <div className='c-section'> */}
+            {/* <div className='c-section'> */}
             <section className='watch-now'>
 
                 <div className='container'>

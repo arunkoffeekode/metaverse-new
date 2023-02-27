@@ -64,7 +64,9 @@ function Massiveslider() {
 
                                 <div class="item">
                                     <div className='social-box'>
-                                        <img src={slider1} alt="" />
+                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
+                                            <img src={slider1} alt="" />
+                                        </a>
                                         <div className='slider-item-details'>
                                             <h6 class="cursor-scale small">spend fantasy in the garden</h6>
                                             <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
@@ -74,7 +76,9 @@ function Massiveslider() {
 
                                 <div class="item">
                                     <div className='social-box'>
-                                        <img src={slider2} alt="" />
+                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
+                                            <img src={slider2} alt="" />
+                                        </a>
                                         <div className='slider-item-details'>
                                             <h6 class="cursor-scale small">spend fantasy in the garden</h6>
                                             <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
@@ -84,7 +88,9 @@ function Massiveslider() {
 
                                 <div class="item">
                                     <div className='social-box'>
-                                        <img src={slider3} alt="" />
+                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
+                                            <img src={slider3} alt="" />
+                                        </a>
                                         <div className='slider-item-details'>
                                             <h6 class="cursor-scale small">spend fantasy in the garden</h6>
                                             <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
@@ -94,7 +100,9 @@ function Massiveslider() {
 
                                 <div class="item">
                                     <div className='social-box'>
-                                        <img src={slider4} alt="" />
+                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
+                                            <img src={slider4} alt="" />
+                                        </a>
                                         <div className='slider-item-details'>
                                             <h6 class="cursor-scale small">spend fantasy in the garden</h6>
                                             <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
@@ -104,7 +112,9 @@ function Massiveslider() {
 
                                 <div class="item">
                                     <div className='social-box'>
-                                        <img src={slider5} alt="" />
+                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
+                                            <img src={slider5} alt="" />
+                                        </a>
                                         <div className='slider-item-details'>
                                             <h6 class="cursor-scale small">spend fantasy in the garden</h6>
                                             <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
@@ -114,7 +124,9 @@ function Massiveslider() {
 
                                 <div class="item">
                                     <div className='social-box'>
-                                        <img src={slider1} alt="" />
+                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
+                                            <img src={slider1} alt="" />
+                                        </a>
                                         <div className='slider-item-details'>
                                             <h6 class="cursor-scale small">spend fantasy in the garden</h6>
                                             <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>

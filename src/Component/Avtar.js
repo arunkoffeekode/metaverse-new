@@ -1,5 +1,4 @@
 import React from 'react'
-
 function Avtar() {
     return (
         <div>
@@ -18,7 +17,7 @@ function Avtar() {
                             <div className='avtar-left'>
                                 <h2 className='cursor-scale'>Create <br />
                                     your own<br />
-                                    <span>avatar</span></h2>
+                                    <span className='anim-typewriter line-1'>avatar</span></h2>
                                 <p className='cursor-scale small'>Making your personal avatar using Social-e creator is simple and takes just a few minutes. Here's how you can do it in five steps.</p>
                                 <button type='button' className='avtar-btn'>Learn more</button>
                                 <button type='button' className='avtar-btn'>Create your avatar</button>
@@ -27,7 +26,7 @@ function Avtar() {
                         </div>
                         <div className='col-lg-5 col-md-12 col-sm-12 col-xl-5 col-xxl-5'>
                             <div className='avtar-img'>
-                                <img src='./images/avtar-img.png'></img>
+                                <img src='./images/avtar-img.png' className='topBottom'></img>
                             </div>
                         </div>
                     </div>

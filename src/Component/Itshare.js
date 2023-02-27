@@ -4,13 +4,13 @@ function Itshare() {
     return (
         <div>
             {/* <div className='c-section'> */}
-            <section className='xr mt-5 mb-4'>
+            <section className='xr mb-4'>
                 <div className='container'>
                     <div className='row' style={{ alignItems: 'center' }} >
                         <div className='col-lg-7 col-md-12 col-xxl-6 col-xl-7 col-sm-12'>
-                            <div className='xr-right'>
-                                <div className="skew">
-                                    <div className="scaled">
+                            <div className='xr-right1'>
+                                <div className="skew1">
+                                    <div className="scaled1">
                                         <img src="./images/xr-2.png" alt="" />
                                     </div>
                                 </div>
