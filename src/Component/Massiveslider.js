@@ -5,6 +5,7 @@ import slider2 from '../img/slider-2.png'
 import slider3 from '../img/slider-3.png'
 import slider4 from '../img/slider-4.png'
 import slider5 from '../img/slider-5.png'
+import Fade from 'react-reveal/Fade';
 function Massiveslider() {
     //Owl Carousel Settings Responsive
     const options1 = {
@@ -47,102 +48,106 @@ function Massiveslider() {
         <div>
             {/* <div className='c-section'> */}
             <section className='social-slider d-block'>
-                <div className='container-fluid'>
-                    <div className='row justify-content-center'>
-                        <div className='col-lg-9 col-md-12 col-xl-9 col-xxl-7 col-sm-12'>
-                            <div className='slider-title'>
-                                <h1 class="cursor-scale">Enter into a massive
-                                    social experience.</h1>
-                                <p class="cursor-scale small">Social-e is a Decentralized Dating App, as a part of Social-e Dating Network. With great technological advantage and an AI driven system, Social-e aims to be the Top Dating App and Network in the World.</p>
+                <Fade bottom>
+                    <div className='container-fluid'>
+                        <div className='row justify-content-center'>
+                            <div className='col-lg-9 col-md-12 col-xl-9 col-xxl-7 col-sm-12'>
+                                <div className='slider-title'>
+                                    <h1 class="cursor-scale">Enter into a massive
+                                        social experience.</h1>
+                                    <p class="cursor-scale small">Social-e is a Decentralized Dating App, as a part of Social-e Dating Network. With great technological advantage and an AI driven system, Social-e aims to be the Top Dating App and Network in the World.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className='row'>
+                            <div className='col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-sm-12'>
+
+                                <OwlCarousel className='owl-carousel owl-theme' loop items={1} nav autoplay={true} {...options1}>
+
+                                    <div class="item">
+                                        <div className='social-box'>
+                                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
+                                                <img src={slider1} alt="" />
+                                            </a>
+                                            <div className='slider-item-details'>
+                                                <h6 class="cursor-scale small">spend fantasy in the garden</h6>
+                                                <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div className='social-box'>
+                                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
+                                                <img src={slider2} alt="" />
+                                            </a>
+                                            <div className='slider-item-details'>
+                                                <h6 class="cursor-scale small">spend fantasy in the garden</h6>
+                                                <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div className='social-box'>
+                                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
+                                                <img src={slider3} alt="" />
+                                            </a>
+                                            <div className='slider-item-details'>
+                                                <h6 class="cursor-scale small">spend fantasy in the garden</h6>
+                                                <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div className='social-box'>
+                                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
+                                                <img src={slider4} alt="" />
+                                            </a>
+                                            <div className='slider-item-details'>
+                                                <h6 class="cursor-scale small">spend fantasy in the garden</h6>
+                                                <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div className='social-box'>
+                                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
+                                                <img src={slider5} alt="" />
+                                            </a>
+                                            <div className='slider-item-details'>
+                                                <h6 class="cursor-scale small">spend fantasy in the garden</h6>
+                                                <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="item">
+                                        <div className='social-box'>
+                                            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
+                                                <img src={slider1} alt="" />
+                                            </a>
+                                            <div className='slider-item-details'>
+                                                <h6 class="cursor-scale small">spend fantasy in the garden</h6>
+                                                <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </OwlCarousel>
+
+                            </div>
+                            <div className='col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-sm-12'>
+                                <div className='social-slider-btn'>
+                                    <button type='button' className='social-s-btn'>Explore</button>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div className='row'>
-                        <div className='col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-sm-12 mb-4'>
-                            <OwlCarousel className='owl-carousel owl-theme' loop items={1} nav autoplay={true} {...options1}>
-
-                                <div class="item">
-                                    <div className='social-box'>
-                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
-                                            <img src={slider1} alt="" />
-                                        </a>
-                                        <div className='slider-item-details'>
-                                            <h6 class="cursor-scale small">spend fantasy in the garden</h6>
-                                            <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div className='social-box'>
-                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
-                                            <img src={slider2} alt="" />
-                                        </a>
-                                        <div className='slider-item-details'>
-                                            <h6 class="cursor-scale small">spend fantasy in the garden</h6>
-                                            <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div className='social-box'>
-                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
-                                            <img src={slider3} alt="" />
-                                        </a>
-                                        <div className='slider-item-details'>
-                                            <h6 class="cursor-scale small">spend fantasy in the garden</h6>
-                                            <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div className='social-box'>
-                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
-                                            <img src={slider4} alt="" />
-                                        </a>
-                                        <div className='slider-item-details'>
-                                            <h6 class="cursor-scale small">spend fantasy in the garden</h6>
-                                            <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div className='social-box'>
-                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
-                                            <img src={slider5} alt="" />
-                                        </a>
-                                        <div className='slider-item-details'>
-                                            <h6 class="cursor-scale small">spend fantasy in the garden</h6>
-                                            <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="item">
-                                    <div className='social-box'>
-                                        <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" data-title="Gallery" data-fancybox="video-gallery">
-                                            <img src={slider1} alt="" />
-                                        </a>
-                                        <div className='slider-item-details'>
-                                            <h6 class="cursor-scale small">spend fantasy in the garden</h6>
-                                            <p class="cursor-scale small">Going to a park and doing something together is one of the most beautiful days.</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </OwlCarousel>
-                        </div>
-                        <div className='col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-sm-12'>
-                            <div className='social-slider-btn'>
-                                <button type='button' className='social-s-btn'>Explore</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </Fade>
             </section>
             {/* </div> */}
         </div>

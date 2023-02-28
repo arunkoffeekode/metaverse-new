@@ -72,7 +72,7 @@ function App() {
       <DiscoverdWord/>
       <Sidebar></Sidebar> */}
 
-    
+
 
       {/* <Header></Header> */}
       <Vr></Vr>
