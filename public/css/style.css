@@ -671,6 +671,17 @@ width: auto;
 .about-section .about-title-1 h6{font-family: 'Rowdies';font-size: 16px;font-weight: 500;text-align: center;text-transform: uppercase;color: #ffffff;}
 .about-section .progress{height: 30px;border: 1px solid #122B61;font-size: 17px;background: #131D32;;}
 .about-section .progress-bar{background: #FC1785;}
+.about-section .nav-pills .nav-link.active{background: #FC1785;}
+.about-section .nav-pills .nav-link{padding: 10px 33px;font-family: 'Rowdies';
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  color: #ffffff;border-radius: 0px;border-right: 1px solid #122B61;}
+
+  .about-section .about-title-2{background: #0D1C3C;border: 1px solid #122B61;padding: 15px;clip-path: polygon(6% 0%, 100% 0%, 100% 33%, 100% 100%, -8% 100%);}
+
 
 /*------- watch-section ---------*/
 .watch-now{width: 100%;position: relative;float: left;padding: 30px 0px 30px 0px;}
@@ -741,9 +752,9 @@ width: auto;
 .animated-slider .courael-img{width: 100%;position: relative;float: left;margin-bottom: 20px;}
 
 /* VR-Section */
-.mountain{width: 100%;position: relative;float: left;height: 100vh;background: url(/images/home-bg.png)center center #131D32;;background-size: cover;overflow: hidden;}
-.mountain:before {position: absolute;content: '';width: 100%;height: 100%;top: 0;left: 0;background-color: #0F234E;opacity: .30;}
-
+/* .mountain{width: 100%;position: relative;float: left;height: 100vh;background: url(/images/home-bg.png)center center #131D32;;background-size: cover;overflow: hidden;}
+.mountain:before {position: absolute;content: '';width: 100%;height: 100%;top: 0;left: 0;background-color: #0F234E;opacity: .30;} */
+.mountain{width: 100%;position: relative;float: left;height: 100vh;background: #0F234E;overflow: hidden;}
 .vr-img{animation: zoominoutsinglefeatured 5s linear infinite;height: 100vh;width: 100%;position: absolute;bottom: 0px;left: 0;right: 0;background: url(/images/vr-img.png)center top;background-size: cover;-webkit-transform-style: preserve-3d;
  }
  /* .vr-img:hover{animation: rotater 6s linear infinite;}

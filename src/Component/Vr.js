@@ -10,18 +10,13 @@ function Vr() {
     return (
         <div>
             <div className='mountain'>
-
                 <Header className="he"></Header>
-
-
                 <Canvas
                     camera={{ position: [-0.1, 2, 2] }} shadows
                 // camera={{ position: [-0.15, 1, 3] }} shadows
                 >
-
                     {/* <ambientLight intensity={1} /> */}
                     <ambientLight />
-
                     <directionalLight position={[3.3, 1.0, 4.4]} castShadow />
                     <OrbitControls enableZoom={false} rotateSpeed={0.4} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} autoRotate />
 
