@@ -1,5 +1,6 @@
 import React from 'react'
 import avt from '../img/avt.png'
+import avtar from '../img/about-avtar.png'
 function About() {
     return (
         <div>
@@ -7,6 +8,9 @@ function About() {
                 <div class="content container-fluid">
                     <div className='row'>
                         <div className='col-lg-6 col-md-12 col-xl-6 col-xxl-6 col-sm-12'>
+                            <div className='about-avtar'>
+                                <img src={avtar}/>
+                            </div>
                         </div>
                         <div className='col-lg-6 col-md-12 col-xl-6 col-xxl-6 col-sm-12'>
                             <div className='about-avt'>

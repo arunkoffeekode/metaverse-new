@@ -694,7 +694,8 @@ width: auto;
 
  .about-avt .avt-img{margin-right: 20px;background: #131D32;border: 1px solid #0D1C3C;z-index: 999999;border-radius: 5px;width: 125px;height: 125px;}
 .about-avt::after{width: 0;height: 0;position: absolute;left: 0;bottom: 0;z-index: 2;content: "";border-bottom: 100px solid #FC1785;border-right: 100px solid transparent;}
-
+.about-avtar{width: 100%;position: relative;float: left;padding-top: 50px;text-align: center;}
+.about-avtar img{width: 320px;}
 /*------- watch-section ---------*/
 .watch-now{width: 100%;position: relative;float: left;padding: 30px 0px 30px 0px;}
 .watch-box{width: 100%;position: relative;float: left;background:radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(11, 21, 41, 0.5) 0%, rgba(19, 29, 50, 0.29) 77.08%, rgba(19, 29, 50, 0.135) 100%);border: 1px solid #2B2F53;box-shadow: inset 10px 10px 20px #080F1F;border-radius: 22px;padding: 30px;}

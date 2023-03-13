@@ -66,16 +66,17 @@ function App() {
       {/* <main class="c-main"> */}
       {/* <Login></Login> */}
 
-      <Head></Head>
+    {/* start admin-panel */}
+      {/* <Head></Head>
       <About></About>
-      {/* <Match></Match>
-      <DiscoverdWord/> */}
-      <Sidebar></Sidebar>
+      <Match></Match>
+      <DiscoverdWord/>
+      <Sidebar></Sidebar> */}
 
 
-
+    {/* start-Home-Page */}
       {/* <Header></Header> */}
-      {/* <Vr></Vr> */}
+      <Vr></Vr>
       {/* <Watch></Watch>
       <Avtar></Avtar>
       <Massiveslider></Massiveslider>
